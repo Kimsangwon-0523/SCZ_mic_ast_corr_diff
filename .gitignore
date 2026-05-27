@@ -1,0 +1,11 @@
+data/primary_cohort/pb_ct/
+data/primary_cohort/pb_ct_filtered/
+data/primary_cohort/snRNA_donor/
+data/primary_cohort/WGCNA_modules/df_tom_similarity_astrocyte.csv
+data/primary_cohort/WGCNA_modules/df_tom_similarity_microglia.csv
+
+data/SNAP_loadings/
+
+data/validation_cohort/
+data/gwas-association-downloaded_2026-03-23-MONDO_0005090.tsv
+data/Homo_sapiens.GRCh38.114.gtf.gz

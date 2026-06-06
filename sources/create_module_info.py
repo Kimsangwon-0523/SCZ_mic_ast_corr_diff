@@ -4,7 +4,7 @@ import re
 import csv
 
 def process_modules(cell_type, prefix):
-    base_dir = f"/data/home/swkim0523/research/SCZ_mic_ast_corr_diff/data/primary_cohort/WGCNA_modules/modules_{cell_type}"
+    base_dir = f"../../data/primary_cohort/WGCNA_modules/modules_{cell_type}"
     output_file = os.path.join(base_dir, f"{cell_type}_module_info.csv")
     
     # Find all module text files

@@ -1,5 +1,5 @@
 getwd();
-workingDir = "D:/wgcna/WGCNA_SCA_Mic_Ast/microglia_val";
+workingDir = "/path/to/directory";
 setwd(workingDir);
 # install.packages("xfun");
 # if (!requireNamespace("BiocManager", quietly = TRUE))

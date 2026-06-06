@@ -1,5 +1,5 @@
 getwd();
-workingDir = "D:/wgcna/WGCNA_SCZ_Mic_Ast/astrocyte_val";
+workingDir = "/path/to/directory";
 setwd(workingDir);
 install.packages("xfun");
 library(WGCNA);

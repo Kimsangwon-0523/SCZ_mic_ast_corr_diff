@@ -163,23 +163,43 @@ def plot_snap_ast_scatter(df, x_col, y_col, condition_col, stats, palette, title
             plt.savefig(f"{output_path}{ext}", dpi=300, bbox_inches="tight")
     plt.show()
 
-def plot_correlation_shift_arrows(z_ctrl_series, z_scz_series, title, output_path=None):
+def plot_correlation_shift_arrows(df_diff, title, output_path=None):
     """
     Plot arrow plot (lollipop-style shift) showing correlation changes 
-    from Control to SCZ across modules.
+    from Control to SCZ across modules, highlighting significant shifts.
     """
     import matplotlib.patches as mpatches
 
-    # 1. Prepare DataFrame
-    df = pd.DataFrame({
-        "module": z_ctrl_series.index,
-        "z_ctrl": z_ctrl_series.values,
-        "z_scz":  z_scz_series.loc[z_ctrl_series.index].values,
-    })
-    df["dz"] = df["z_scz"] - df["z_ctrl"]
-    df = df.sort_values("z_ctrl", ascending=False).reset_index(drop=True)
+    # 1. Dynamically find control and SCZ columns
+    ctrl_col = [col for col in df_diff.columns if col.endswith('_ctrl')][0]
+    scz_col = [col for col in df_diff.columns if col.endswith('_scz')][0]
 
-    # 2. Colors by direction and intensity
+    # Find the module/index column
+    if 'index' in df_diff.columns:
+        module_col = 'index'
+    elif 'module' in df_diff.columns:
+        module_col = 'module'
+    else:
+        df_diff = df_diff.reset_index()
+        module_col = 'index'
+
+    # 2. Prepare DataFrame
+    df = pd.DataFrame({
+        "module": df_diff[module_col].values,
+        "z_ctrl": df_diff[ctrl_col].values,
+        "z_scz":  df_diff[scz_col].values,
+    })
+    
+    if "fdr_bh" in df_diff.columns:
+        df["fdr_bh"] = df_diff["fdr_bh"].values
+    if "p_value" in df_diff.columns:
+        df["p_value"] = df_diff["p_value"].values
+
+    df["dz"] = df["z_scz"] - df["z_ctrl"]
+    # Sort by dz (delta Z) descending
+    df = df.sort_values("dz", ascending=False).reset_index(drop=True)
+
+    # 3. Colors by direction and intensity
     dz_abs_max = df["dz"].abs().max()
     if dz_abs_max == 0: dz_abs_max = 1
     colors = []
@@ -190,7 +210,7 @@ def plot_correlation_shift_arrows(z_ctrl_series, z_scz_series, title, output_pat
         else:
             colors.append(plt.cm.Blues(intensity))
 
-    # 3. Style setup
+    # 4. Style setup
     plt.rcParams.update({
         "font.family": "Liberation Serif",
         "font.size": 9,
@@ -201,14 +221,21 @@ def plot_correlation_shift_arrows(z_ctrl_series, z_scz_series, title, output_pat
         "ytick.major.size": 3,
     })
 
-    # 4. Plot
-    fig, ax = plt.subplots(figsize=(3, 5))
+    # 5. Plot
+    fig, ax = plt.subplots(figsize=(5, 5))
     y_pos = np.arange(len(df))
 
     for i, row in df.iterrows():
         z0 = row["z_ctrl"]
         z1 = row["z_scz"]
         c  = colors[i]
+        
+        # Check significance (e.g., FDR < 0.05)
+        is_sig = "fdr_bh" in row and row["fdr_bh"] < 0.05
+        
+        # Make significant shifts more prominent (higher linewidth and opacity)
+        lw = 2.0 if is_sig else 1.2
+        alpha = 1.0 if is_sig else 0.5
 
         # Arrow line (ctrl → scz)
         ax.annotate(
@@ -218,29 +245,61 @@ def plot_correlation_shift_arrows(z_ctrl_series, z_scz_series, title, output_pat
             arrowprops=dict(
                 arrowstyle="-|>",
                 color=c,
-                lw=1.8,
-                mutation_scale=10,
-                shrinkA=0,
-                shrinkB=0,
+                lw=lw,
+                alpha=alpha,
+                mutation_scale=10 if is_sig else 8,
+                shrinkA=3,
+                shrinkB=2,
             ),
         )
 
-        # Dot at control (start)
-        ax.plot(z0, i, "o", color=c, markersize=5, zorder=3,
+        # Dot at control (start) - filled circle
+        ax.plot(z0, i, "o", color=c, markersize=5 if is_sig else 4, alpha=alpha, zorder=3,
                 markeredgecolor="white", markeredgewidth=0.4)
 
-    # 5. Formatting
+        # Dot at SCZ (end) - empty circle
+        ax.plot(z1, i, "o", markerfacecolor="white", markeredgecolor=c, 
+                markersize=4, markeredgewidth= 0.8,
+                alpha=alpha, zorder=3)
+
+    # 6. Formatting
     ax.set_yticks(y_pos)
-    ax.set_yticklabels(df["module"], fontsize=9)
+    
+    # Generate labels and check significance for bolding/asterisks
+    labels = []
+    for i, row in df.iterrows():
+        lbl = row["module"]
+        if "fdr_bh" in row:
+            fdr = row["fdr_bh"]
+            if fdr < 0.001:
+                lbl += " ***"
+            elif fdr < 0.01:
+                lbl += " **"
+            elif fdr < 0.05:
+                lbl += " *"
+        labels.append(lbl)
+    ax.set_yticklabels(labels, fontsize=9)
+    
+    # Apply font weight and color to significant/non-significant modules
+    for i, row in df.iterrows():
+        if "fdr_bh" in row and row["fdr_bh"] < 0.05:
+            ax.get_yticklabels()[i].set_fontweight("bold")
+            ax.get_yticklabels()[i].set_color("black")
+        else:
+            ax.get_yticklabels()[i].set_color("0.3")
+
     ax.invert_yaxis()
     ax.axvline(0, color="0.4", lw=0.5, ls="--", zorder=0)
 
     ax.set_xlabel("Fisher's Z", fontsize=10, labelpad=6)
     ax.set_title(title, fontsize=11, fontweight="bold", pad=10)
 
-    # Legend annotation
-    ax.annotate("● Control  → SCZ", xy=(0.98, 0.02),
-                xycoords="axes fraction", ha="right", va="bottom",
+    # Legend annotation (moved to the right of the plot)
+    legend_text = "● Control  → ○ SCZ"
+    if "fdr_bh" in df.columns and (df["fdr_bh"] < 0.05).any():
+        legend_text += "\n*    FDR < 0.05\n**  FDR < 0.01\n*** FDR < 0.001\n(bold if FDR < 0.05)"
+    ax.annotate(legend_text, xy=(1.05, 0.95),
+                xycoords="axes fraction", ha="left", va="top",
                 fontsize=9, color="#222222",
                 bbox=dict(boxstyle="round,pad=0.3", fc="white",
                           ec="0.8", alpha=0.9))

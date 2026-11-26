@@ -1,0 +1,82 @@
+dataset	recipient	sample_id	gsm_id	geo_title	condition	recipient_line	recipient_genotype	mcm_source_genotype	pair_id	planned_sample	scored
+GSE175485	astrocyte	ECM_PBS_1_S13	GSM5335310	ECM_PBS_1	PBS-ECM					False	False
+GSE175485	astrocyte	ECM_PBS_2_S14	GSM5335311	ECM_PBS_2	PBS-ECM					False	False
+GSE175485	astrocyte	ECM_PBS_3_S15	GSM5335312	ECM_PBS_3	PBS-ECM					False	False
+GSE175485	astrocyte	ECM_LPS_1_S16	GSM5335313	ECM_LPS_1	LPS-ECM					False	False
+GSE175485	astrocyte	ECM_LPS_2_S29	GSM5335314	ECM_LPS_2	LPS-ECM					False	False
+GSE175485	astrocyte	ECM_LPS_3_S30	GSM5335315	ECM_LPS_3	LPS-ECM					False	False
+GSE175485	astrocyte	MCM_PBS_1_S31	GSM5335316	MCM_PBS_1	PBS-MCM					True	True
+GSE175485	astrocyte	MCM_PBS_2_S32	GSM5335317	MCM_PBS_2	PBS-MCM					True	True
+GSE175485	astrocyte	MCM_PBS_3_S33	GSM5335318	MCM_PBS_3	PBS-MCM					True	True
+GSE175485	astrocyte	MCM_LPS_1-NEW_S34	GSM5335319	MCM_LPS_1	LPS-MCM					True	True
+GSE175485	astrocyte	MCM_LPS_2_S35	GSM5335320	MCM_LPS_2	LPS-MCM					True	True
+GSE175485	astrocyte	MCM_LPS_3_S36	GSM5335321	MCM_LPS_3	LPS-MCM					True	True
+GSE228927	astrocyte	Hemin1	GSM7142967	Hemin-MCM, replicate 1	Hemin-MCM		WT			True	True
+GSE228927	astrocyte	Hemin2	GSM7142968	Hemin-MCM, replicate 2	Hemin-MCM		WT			True	True
+GSE228927	astrocyte	Hemin3	GSM7142969	Hemin-MCM, replicate 3	Hemin-MCM		WT			True	True
+GSE228927	astrocyte	LPS1	GSM7142964	LPS-MCM, replicate 1	LPS-MCM		WT			True	True
+GSE228927	astrocyte	LPS2	GSM7142965	LPS-MCM, replicate 2	LPS-MCM		WT			True	True
+GSE228927	astrocyte	LPS3	GSM7142966	LPS-MCM, replicate 3	LPS-MCM		WT			True	True
+GSE228927	astrocyte	NOT1	GSM7142961	Resting-MCM, replicate 1	Resting-MCM		WT			True	True
+GSE228927	astrocyte	NOT2	GSM7142962	Resting-MCM, replicate 2	Resting-MCM		WT			True	True
+GSE228927	astrocyte	NOT3	GSM7142963	Resting-MCM, replicate 3	Resting-MCM		WT			True	True
+GSE282665	astrocyte	ctrl1_ctrl_lps	GSM8669349	ctrl1_ctrl_lps	LPS-MCM	ctrl1	ctrl	ctrl	ctrl1	True	True
+GSE282665	astrocyte	ctrl1_ctrl_untx	GSM8669342	ctrl1_ctrl_untx	Resting-MCM	ctrl1	ctrl	ctrl	ctrl1	True	True
+GSE282665	astrocyte	ctrl1_nil_lps	GSM8669351	ctrl1_nil_lps	Fresh+LPS	ctrl1	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl1_nil_untx	GSM8669331	ctrl1_nil_untx	Fresh	ctrl1	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl1_vcp_lps	GSM8669350	ctrl1_vcp_lps	LPS VCP-MCM	ctrl1	ctrl	vcp		False	True
+GSE282665	astrocyte	ctrl1_vcp_untx	GSM8669348	ctrl1_vcp_untx	Resting VCP-MCM	ctrl1	ctrl	vcp		False	True
+GSE282665	astrocyte	ctrl2_ctrl_lps	GSM8669332	ctrl2_ctrl_lps	LPS-MCM	ctrl2	ctrl	ctrl	ctrl2	True	True
+GSE282665	astrocyte	ctrl2_ctrl_untx	GSM8669353	ctrl2_ctrl_untx	Resting-MCM	ctrl2	ctrl	ctrl	ctrl2	True	True
+GSE282665	astrocyte	ctrl2_nil_lps	GSM8669334	ctrl2_nil_lps	Fresh+LPS	ctrl2	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl2_nil_untx	GSM8669352	ctrl2_nil_untx	Fresh	ctrl2	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl2_vcp_lps	GSM8669333	ctrl2_vcp_lps	LPS VCP-MCM	ctrl2	ctrl	vcp		False	True
+GSE282665	astrocyte	ctrl2_vcp_untx	GSM8669354	ctrl2_vcp_untx	Resting VCP-MCM	ctrl2	ctrl	vcp		False	True
+GSE282665	astrocyte	ctrl4_ctrl_lps	GSM8669338	ctrl4_ctrl_lps	LPS-MCM	ctrl4	ctrl	ctrl	ctrl4	True	True
+GSE282665	astrocyte	ctrl4_ctrl_untx	GSM8669336	ctrl4_ctrl_untx	Resting-MCM	ctrl4	ctrl	ctrl	ctrl4	True	True
+GSE282665	astrocyte	ctrl4_nil_lps	GSM8669340	ctrl4_nil_lps	Fresh+LPS	ctrl4	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl4_nil_untx	GSM8669335	ctrl4_nil_untx	Fresh	ctrl4	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl4_vcp_lps	GSM8669339	ctrl4_vcp_lps	LPS VCP-MCM	ctrl4	ctrl	vcp		False	True
+GSE282665	astrocyte	ctrl4_vcp_untx	GSM8669337	ctrl4_vcp_untx	Resting VCP-MCM	ctrl4	ctrl	vcp		False	True
+GSE282665	astrocyte	ctrl6_ctrl_lps	GSM8669345	ctrl6_ctrl_lps	LPS-MCM	ctrl6	ctrl	ctrl	ctrl6	True	True
+GSE282665	astrocyte	ctrl6_ctrl_untx	GSM8669343	ctrl6_ctrl_untx	Resting-MCM	ctrl6	ctrl	ctrl	ctrl6	True	True
+GSE282665	astrocyte	ctrl6_nil_lps	GSM8669347	ctrl6_nil_lps	Fresh+LPS	ctrl6	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl6_nil_untx	GSM8669341	ctrl6_nil_untx	Fresh	ctrl6	ctrl	nil		False	True
+GSE282665	astrocyte	ctrl6_vcp_lps	GSM8669346	ctrl6_vcp_lps	LPS VCP-MCM	ctrl6	ctrl	vcp		False	True
+GSE282665	astrocyte	ctrl6_vcp_untx	GSM8669344	ctrl6_vcp_untx	Resting VCP-MCM	ctrl6	ctrl	vcp		False	True
+GSE282665	motor neuron	cb1d_lps_ctrl	GSM8669316	cb1d_lps_ctrl	LPS-MCM	cb1d	vcp	ctrl		False	True
+GSE282665	motor neuron	cb1d_lps_fresh	GSM8669315	cb1d_lps_fresh	Fresh+LPS	cb1d	vcp	nil		False	True
+GSE282665	motor neuron	cb1d_lps_vcp	GSM8669318	cb1d_lps_vcp	LPS VCP-MCM	cb1d	vcp	vcp		False	True
+GSE282665	motor neuron	cb1d_untx_ctrl	GSM8669313	cb1d_untx_ctrl	Resting-MCM	cb1d	vcp	ctrl		False	True
+GSE282665	motor neuron	cb1d_untx_fresh	GSM8669312	cb1d_untx_fresh	Fresh	cb1d	vcp	nil		False	True
+GSE282665	motor neuron	cb1d_untx_vcp	GSM8669314	cb1d_untx_vcp	Resting VCP-MCM	cb1d	vcp	vcp		False	True
+GSE282665	motor neuron	cb1e_lps_ctrl	GSM8669323	cb1e_lps_ctrl	LPS-MCM	cb1e	vcp	ctrl		False	True
+GSE282665	motor neuron	cb1e_lps_fresh	GSM8669322	cb1e_lps_fresh	Fresh+LPS	cb1e	vcp	nil		False	True
+GSE282665	motor neuron	cb1e_lps_vcp	GSM8669324	cb1e_lps_vcp	LPS VCP-MCM	cb1e	vcp	vcp		False	True
+GSE282665	motor neuron	cb1e_untx_ctrl	GSM8669320	cb1e_untx_ctrl	Resting-MCM	cb1e	vcp	ctrl		False	True
+GSE282665	motor neuron	cb1e_untx_fresh	GSM8669319	cb1e_untx_fresh	Fresh	cb1e	vcp	nil		False	True
+GSE282665	motor neuron	cb1e_untx_vcp	GSM8669321	cb1e_untx_vcp	Resting VCP-MCM	cb1e	vcp	vcp		False	True
+GSE282665	motor neuron	ctrl3_lps_ctrl	GSM8669326	ctrl3_lps_ctrl	LPS-MCM	ctrl3	ctrl	ctrl	ctrl3	True	True
+GSE282665	motor neuron	ctrl3_lps_fresh	GSM8669325	ctrl3_lps_fresh	Fresh+LPS	ctrl3	ctrl	nil		False	True
+GSE282665	motor neuron	ctrl3_lps_vcp	GSM8669327	ctrl3_lps_vcp	LPS VCP-MCM	ctrl3	ctrl	vcp		False	True
+GSE282665	motor neuron	ctrl3_untx_ctrl	GSM8669306	ctrl3_untx_ctrl	Resting-MCM	ctrl3	ctrl	ctrl	ctrl3	True	True
+GSE282665	motor neuron	ctrl3_untx_fresh	GSM8669295	ctrl3_untx_fresh	Fresh	ctrl3	ctrl	nil		False	True
+GSE282665	motor neuron	ctrl3_untx_vcp	GSM8669317	ctrl3_untx_vcp	Resting VCP-MCM	ctrl3	ctrl	vcp		False	True
+GSE282665	motor neuron	ctrl4_lps_ctrl	GSM8669297	ctrl4_lps_ctrl	LPS-MCM	ctrl4	ctrl	ctrl	ctrl4	True	True
+GSE282665	motor neuron	ctrl4_lps_fresh	GSM8669296	ctrl4_lps_fresh	Fresh+LPS	ctrl4	ctrl	nil		False	True
+GSE282665	motor neuron	ctrl4_lps_vcp	GSM8669298	ctrl4_lps_vcp	LPS VCP-MCM	ctrl4	ctrl	vcp		False	True
+GSE282665	motor neuron	ctrl4_untx_ctrl	GSM8669329	ctrl4_untx_ctrl	Resting-MCM	ctrl4	ctrl	ctrl	ctrl4	True	True
+GSE282665	motor neuron	ctrl4_untx_fresh	GSM8669328	ctrl4_untx_fresh	Fresh	ctrl4	ctrl	nil		False	True
+GSE282665	motor neuron	ctrl4_untx_vcp	GSM8669330	ctrl4_untx_vcp	Resting VCP-MCM	ctrl4	ctrl	vcp		False	True
+GSE282665	motor neuron	ctrl5_lps_ctrl	GSM8669303	ctrl5_lps_ctrl	LPS-MCM	ctrl5	ctrl	ctrl	ctrl5	True	True
+GSE282665	motor neuron	ctrl5_lps_fresh	GSM8669302	ctrl5_lps_fresh	Fresh+LPS	ctrl5	ctrl	nil		False	True
+GSE282665	motor neuron	ctrl5_lps_vcp	GSM8669304	ctrl5_lps_vcp	LPS VCP-MCM	ctrl5	ctrl	vcp		False	True
+GSE282665	motor neuron	ctrl5_untx_ctrl	GSM8669300	ctrl5_untx_ctrl	Resting-MCM	ctrl5	ctrl	ctrl	ctrl5	True	True
+GSE282665	motor neuron	ctrl5_untx_fresh	GSM8669299	ctrl5_untx_fresh	Fresh	ctrl5	ctrl	nil		False	True
+GSE282665	motor neuron	ctrl5_untx_vcp	GSM8669301	ctrl5_untx_vcp	Resting VCP-MCM	ctrl5	ctrl	vcp		False	True
+GSE282665	motor neuron	glia_lps_ctrl	GSM8669310	glia_lps_ctrl	LPS-MCM	glia	vcp	ctrl		False	True
+GSE282665	motor neuron	glia_lps_fresh	GSM8669309	glia_lps_fresh	Fresh+LPS	glia	vcp	nil		False	True
+GSE282665	motor neuron	glia_lps_vcp	GSM8669311	glia_lps_vcp	LPS VCP-MCM	glia	vcp	vcp		False	True
+GSE282665	motor neuron	glia_untx_ctrl	GSM8669307	glia_untx_ctrl	Resting-MCM	glia	vcp	ctrl		False	True
+GSE282665	motor neuron	glia_untx_fresh	GSM8669305	glia_untx_fresh	Fresh	glia	vcp	nil		False	True
+GSE282665	motor neuron	glia_untx_vcp	GSM8669308	glia_untx_vcp	Resting VCP-MCM	glia	vcp	vcp		False	True

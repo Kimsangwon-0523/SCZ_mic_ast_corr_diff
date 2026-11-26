@@ -40,3 +40,9 @@ Rcodes/microglia_val/permutedStats-actualModules.RData
 
 *.png
 *.pdf
+!figures/*.png
+!figures/*.pdf
+
+# Local analysis plans
+/MCM_ACHES_SNAP_Codex_Implementation.md
+/notebooks/perturbation/IMPLEMENTATION_PLAN.md

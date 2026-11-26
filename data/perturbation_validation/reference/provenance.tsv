@@ -1,0 +1,7 @@
+file	sha256	source
+GSE175485.samples.txt	5c6bb4a116a6b2725bceda6970e9be7a48b29a34f9f9897738c28384a83bb77b	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE175485&targ=gsm&form=text&view=full
+GSE228927.samples.txt	55526a7436f1e6834d8113e01dd50ee6ab24036d7e80d66e19ad86dc187f6c1e	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228927&targ=gsm&form=text&view=full
+GSE282665.samples.txt	1f206f9c745296567109efcb18f52511c6f1fce2018d8e6859bd881537473bb9	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282665&targ=gsm&form=text&view=full
+human_mouse_ortholog_candidates.csv	865c14ff51e07386a638c015ef5721ae5556430358c6957ae30355be6a9bff48	Local datamining_5 Ensembl Compara candidates; see README.md
+Homo_sapiens.GRCh38.114.gtf.gz	75ec5b7a1bbb8ce566622dd9abf974ad37d390130325dae6d197d1a590854c50	Ensembl GRCh38 release 114 GTF from repository data
+mcm_Mus_musculus.GRCm39.116.gtf.gz	5c29fd9e3157cf40fdbbf76ab25bfe7f79aa61313e0b672664ddb0cb251c02e1	https://ftp.ensembl.org/pub/release-116/gtf/mus_musculus/Mus_musculus.GRCm39.116.gtf.gz

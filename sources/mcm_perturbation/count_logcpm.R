@@ -1,0 +1,16 @@
+args <- commandArgs(trailingOnly = TRUE)
+if (length(args) != 3) stop("Usage: count_logcpm.R counts.tsv samples.tsv output.tsv")
+suppressPackageStartupMessages(library(edgeR))
+counts <- read.delim(args[1], row.names = 1, check.names = FALSE)
+samples <- read.delim(args[2], check.names = FALSE)
+stopifnot(identical(colnames(counts), samples$sample_id))
+
+group <- factor(samples$condition)
+design <- model.matrix(~ 0 + group)
+dge <- DGEList(counts)
+keep <- filterByExpr(dge, design = design)
+dge <- dge[keep, , keep.lib.sizes = FALSE]
+dge <- calcNormFactors(dge, method = "TMM")
+expression <- cpm(dge, log = TRUE, prior.count = 1)
+write.table(expression, args[3], sep = "\t", col.names = NA, quote = FALSE)
+message("edgeR ", packageVersion("edgeR"), ": retained ", sum(keep), "/", length(keep), " genes")

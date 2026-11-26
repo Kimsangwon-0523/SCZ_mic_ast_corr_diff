@@ -1,6 +1,6 @@
 # Figure index
 
-Figures **01–24** each have PDF, SVG and PNG files. The former basenames below map each number back to its analysis. The perturbation figure is **24**.
+Figures **01–25** each have PDF, SVG and PNG files. The former basenames below map each number back to its analysis. The perturbation figures are **24–25**.
 
 | No. | Figure | Files | Former basename |
 | --- | --- | --- | --- |
@@ -28,3 +28,4 @@ Figures **01–24** each have PDF, SVG and PNG files. The former basenames below
 | 22 | BA11 Ast7 and SNAP-a scores | [PDF](figures/22.pdf) · [SVG](figures/22.svg) · [PNG](figures/22.png) | `ast7_snapa_val_scatter` |
 | 23 | BA46 ACHES and SNAP-a score distributions | [PDF](figures/23.pdf) · [SVG](figures/23.svg) · [PNG](figures/23.png) | `snapa_ast15_distribution` |
 | 24 | GSE282665 astrocyte ACHES and SNAP-a scores with paired significance brackets | [PDF](figures/24.pdf) · [SVG](figures/24.svg) · [PNG](figures/24.png) | `GSE282665_program_scores_significance` |
+| 25 | GSE228927 astrocyte ACHES and SNAP-a scores with significance brackets | [PDF](figures/25.pdf) · [SVG](figures/25.svg) · [PNG](figures/25.png) | `GSE228927_program_scores_significance` |

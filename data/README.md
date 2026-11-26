@@ -14,7 +14,7 @@ The [perturbation_validation](perturbation_validation/) directory holds all MCM 
 
 | Subdirectory | Contents |
 | --- | --- |
-| `GSE175485/` | Local mouse bulk RNA-seq workbooks from [GEO GSE175485](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE175485), including counts and log2FPKM |
+| `GSE228927/` | Local mouse astrocyte FPKM matrix from [GEO GSE228927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228927), including resting-, LPS- and hemin-MCM |
 | `GSE282665/` | Local human gene TPM matrices from [GEO GSE282665](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282665), split by recipient or experiment |
 | [reference](perturbation_validation/reference/) | GEO sample metadata, human–mouse orthology and source hashes |
 | [results](perturbation_validation/results/) | Sample manifest, program scores, mapping and coverage, condition summaries, paired differences and contrast statistics. Full tables include earlier exploratory comparisons. |

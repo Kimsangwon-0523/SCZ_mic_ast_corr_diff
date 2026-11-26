@@ -10,6 +10,6 @@ This repository contains the BA46 discovery analysis, BA11 validation, and an an
 
 [Figure index](FIGURES.md) lists the numbered figures and their original names. [Data inventory](data/README.md) describes the inputs, intermediate data, and result tables. Reusable code lives in [sources](sources/), and WGCNA R scripts are in [Rcodes](Rcodes/).
 
-The MCM review notebook shows the GSE282665 astrocyte comparison. See the [perturbation README](notebooks/perturbation/README.md) for the commands to rebuild figure 24 or recompute the program scores from local GEO inputs.
+The MCM review notebook shows the GSE228927 and GSE282665 astrocyte comparisons. See the [perturbation README](notebooks/perturbation/README.md) for the commands to rebuild figures 24–25 or recompute the program scores from local GEO inputs.
 
 Licensed under the [MIT License](LICENSE).

@@ -40,3 +40,14 @@ Rcodes/microglia_val/permutedStats-actualModules.RData
 
 *.png
 *.pdf
+!figures/*.png
+!figures/*.pdf
+
+# Local analysis plans
+/MCM_ACHES_SNAP_Codex_Implementation.md
+/notebooks/perturbation/IMPLEMENTATION_PLAN.md
+
+# Downloaded GEO expression files
+/data/perturbation_validation/GSE175485/
+/data/perturbation_validation/GSE282665/*.gene_tpm.tsv
+/data/perturbation_validation/GSE282665/*.gene_tpm.tsv.gz

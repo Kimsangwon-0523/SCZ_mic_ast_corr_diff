@@ -1,0 +1,106 @@
+dataset	gsm_id	geo_title	strain	tissue	treatment	cell_type	genotype	cell_line	lps_treatment	microglia_media	sirna_treatment	strandedness	library_type
+GSE175485	GSM5335310	ECM_PBS_1	C57BL/6	Brain	Control ECM								
+GSE175485	GSM5335311	ECM_PBS_2	C57BL/6	Brain	Control ECM								
+GSE175485	GSM5335312	ECM_PBS_3	C57BL/6	Brain	Control ECM								
+GSE175485	GSM5335313	ECM_LPS_1	C57BL/6	Brain	Activated ECM								
+GSE175485	GSM5335314	ECM_LPS_2	C57BL/6	Brain	Activated ECM								
+GSE175485	GSM5335315	ECM_LPS_3	C57BL/6	Brain	Activated ECM								
+GSE175485	GSM5335316	MCM_PBS_1	C57BL/6	Brain	Contorl MCM								
+GSE175485	GSM5335317	MCM_PBS_2	C57BL/6	Brain	Contorl MCM								
+GSE175485	GSM5335318	MCM_PBS_3	C57BL/6	Brain	Contorl MCM								
+GSE175485	GSM5335319	MCM_LPS_1	C57BL/6	Brain	Activated MCM								
+GSE175485	GSM5335320	MCM_LPS_2	C57BL/6	Brain	Activated MCM								
+GSE175485	GSM5335321	MCM_LPS_3	C57BL/6	Brain	Activated MCM								
+GSE282665	GSM8669281	untx_ctrl3				ips_microglia_alone	ctrl	ctrl3	untx	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669282	untx_ctrl4				ips_microglia_alone	ctrl	ctrl4	untx	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669283	untx_ncrm1				ips_microglia_alone	ctrl	ncrm1	untx	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669284	untx_vcpf10				ips_microglia_alone	ctrl	vcpf10	untx	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669285	untx_glib				ips_microglia_alone	R191Q	glib	untx	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669286	untx_cb1d				ips_microglia_alone	R155C	cb1d	untx	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669287	untx_ncrme6				ips_microglia_alone	R191Q	ncrme6	untx	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669288	lps_ctrl3				ips_microglia_alone	ctrl	ctrl3	lps	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669289	lps_ctrl4				ips_microglia_alone	ctrl	ctrl4	lps	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669290	lps_ncrm1				ips_microglia_alone	ctrl	ncrm1	lps	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669291	lps_vcpf10				ips_microglia_alone	ctrl	vcpf10	lps	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669292	lps_glib				ips_microglia_alone	R191Q	glib	lps	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669293	lps_cb1d				ips_microglia_alone	R155C	cb1d	lps	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669294	lps_ncrme6				ips_microglia_alone	R191Q	ncrme6	lps	nil	nil	reverse	polyA_KAPA_mRNA_Hyper_Prep
+GSE282665	GSM8669295	ctrl3_untx_fresh				microglia_media_on_ips_motor_neurons	ctrl	ctrl3	untx	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669296	ctrl4_lps_fresh				microglia_media_on_ips_motor_neurons	ctrl	ctrl4	lps	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669297	ctrl4_lps_ctrl				microglia_media_on_ips_motor_neurons	ctrl	ctrl4	lps	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669298	ctrl4_lps_vcp				microglia_media_on_ips_motor_neurons	ctrl	ctrl4	lps	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669299	ctrl5_untx_fresh				microglia_media_on_ips_motor_neurons	ctrl	ctrl5	untx	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669300	ctrl5_untx_ctrl				microglia_media_on_ips_motor_neurons	ctrl	ctrl5	untx	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669301	ctrl5_untx_vcp				microglia_media_on_ips_motor_neurons	ctrl	ctrl5	untx	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669302	ctrl5_lps_fresh				microglia_media_on_ips_motor_neurons	ctrl	ctrl5	lps	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669303	ctrl5_lps_ctrl				microglia_media_on_ips_motor_neurons	ctrl	ctrl5	lps	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669304	ctrl5_lps_vcp				microglia_media_on_ips_motor_neurons	ctrl	ctrl5	lps	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669305	glia_untx_fresh				microglia_media_on_ips_motor_neurons	vcp	glia	untx	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669306	ctrl3_untx_ctrl				microglia_media_on_ips_motor_neurons	ctrl	ctrl3	untx	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669307	glia_untx_ctrl				microglia_media_on_ips_motor_neurons	vcp	glia	untx	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669308	glia_untx_vcp				microglia_media_on_ips_motor_neurons	vcp	glia	untx	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669309	glia_lps_fresh				microglia_media_on_ips_motor_neurons	vcp	glia	lps	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669310	glia_lps_ctrl				microglia_media_on_ips_motor_neurons	vcp	glia	lps	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669311	glia_lps_vcp				microglia_media_on_ips_motor_neurons	vcp	glia	lps	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669312	cb1d_untx_fresh				microglia_media_on_ips_motor_neurons	vcp	cb1d	untx	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669313	cb1d_untx_ctrl				microglia_media_on_ips_motor_neurons	vcp	cb1d	untx	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669314	cb1d_untx_vcp				microglia_media_on_ips_motor_neurons	vcp	cb1d	untx	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669315	cb1d_lps_fresh				microglia_media_on_ips_motor_neurons	vcp	cb1d	lps	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669316	cb1d_lps_ctrl				microglia_media_on_ips_motor_neurons	vcp	cb1d	lps	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669317	ctrl3_untx_vcp				microglia_media_on_ips_motor_neurons	ctrl	ctrl3	untx	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669318	cb1d_lps_vcp				microglia_media_on_ips_motor_neurons	vcp	cb1d	lps	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669319	cb1e_untx_fresh				microglia_media_on_ips_motor_neurons	vcp	cb1e	untx	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669320	cb1e_untx_ctrl				microglia_media_on_ips_motor_neurons	vcp	cb1e	untx	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669321	cb1e_untx_vcp				microglia_media_on_ips_motor_neurons	vcp	cb1e	untx	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669322	cb1e_lps_fresh				microglia_media_on_ips_motor_neurons	vcp	cb1e	lps	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669323	cb1e_lps_ctrl				microglia_media_on_ips_motor_neurons	vcp	cb1e	lps	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669324	cb1e_lps_vcp				microglia_media_on_ips_motor_neurons	vcp	cb1e	lps	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669325	ctrl3_lps_fresh				microglia_media_on_ips_motor_neurons	ctrl	ctrl3	lps	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669326	ctrl3_lps_ctrl				microglia_media_on_ips_motor_neurons	ctrl	ctrl3	lps	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669327	ctrl3_lps_vcp				microglia_media_on_ips_motor_neurons	ctrl	ctrl3	lps	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669328	ctrl4_untx_fresh				microglia_media_on_ips_motor_neurons	ctrl	ctrl4	untx	nil	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669329	ctrl4_untx_ctrl				microglia_media_on_ips_motor_neurons	ctrl	ctrl4	untx	ctrl	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669330	ctrl4_untx_vcp				microglia_media_on_ips_motor_neurons	ctrl	ctrl4	untx	vcp	nil	reverse	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669331	ctrl1_nil_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl1	untx	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669332	ctrl2_ctrl_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl2	lps	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669333	ctrl2_vcp_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl2	lps	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669334	ctrl2_nil_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl2	lps	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669335	ctrl4_nil_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl4	untx	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669336	ctrl4_ctrl_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl4	untx	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669337	ctrl4_vcp_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl4	untx	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669338	ctrl4_ctrl_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl4	lps	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669339	ctrl4_vcp_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl4	lps	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669340	ctrl4_nil_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl4	lps	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669341	ctrl6_nil_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl6	untx	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669342	ctrl1_ctrl_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl1	untx	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669343	ctrl6_ctrl_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl6	untx	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669344	ctrl6_vcp_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl6	untx	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669345	ctrl6_ctrl_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl6	lps	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669346	ctrl6_vcp_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl6	lps	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669347	ctrl6_nil_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl6	lps	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669348	ctrl1_vcp_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl1	untx	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669349	ctrl1_ctrl_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl1	lps	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669350	ctrl1_vcp_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl1	lps	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669351	ctrl1_nil_lps				microglia_media_on_ips_astrocytes	ctrl	ctrl1	lps	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669352	ctrl2_nil_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl2	untx	nil	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669353	ctrl2_ctrl_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl2	untx	ctrl	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669354	ctrl2_vcp_untx				microglia_media_on_ips_astrocytes	ctrl	ctrl2	untx	vcp	nil	auto	NEBNext Ultra II Directional PolyA mRNA
+GSE282665	GSM8669355	ctrl1_scramble				ips_microglia_sirna	ctrl	ctrl1	untx	nil	scramble	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669356	vcpf10_cxcr4				ips_microglia_sirna	ctrl	vcpf10	untx	nil	cxcr4	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669357	glia_cxcr4				ips_microglia_sirna	vcp	glia	untx	nil	cxcr4	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669358	glib_cxcr4				ips_microglia_sirna	vcp	glib	untx	nil	cxcr4	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669359	cb1e_cxcr4				ips_microglia_sirna	vcp	cb1e	untx	nil	cxcr4	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669360	ctrl1_gpnmb				ips_microglia_sirna	ctrl	ctrl1	untx	nil	gpnmb	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669361	ctrl4_gpnmb				ips_microglia_sirna	ctrl	ctrl4	untx	nil	gpnmb	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669362	ctrl5_gpnmb				ips_microglia_sirna	ctrl	ctrl5	untx	nil	gpnmb	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669363	glia_gpnmb				ips_microglia_sirna	vcp	glia	untx	nil	gpnmb	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669364	glib_gpnmb				ips_microglia_sirna	vcp	glib	untx	nil	gpnmb	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669365	cb1e_gpnmb				ips_microglia_sirna	vcp	cb1e	untx	nil	gpnmb	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669366	ctrl4_scramble				ips_microglia_sirna	ctrl	ctrl4	untx	nil	scramble	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669367	ctrl5_scramble				ips_microglia_sirna	ctrl	ctrl5	untx	nil	scramble	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669368	vcpf10_scramble				ips_microglia_sirna	ctrl	vcpf10	untx	nil	scramble	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669369	glia_scramble				ips_microglia_sirna	vcp	glia	untx	nil	scramble	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669370	glib_scramble				ips_microglia_sirna	vcp	glib	untx	nil	scramble	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669371	cb1e_scramble				ips_microglia_sirna	vcp	cb1e	untx	nil	scramble	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669372	ctrl1_cxcr4				ips_microglia_sirna	ctrl	ctrl1	untx	nil	cxcr4	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion
+GSE282665	GSM8669373	ctrl4_cxcr4				ips_microglia_sirna	ctrl	ctrl4	untx	nil	cxcr4	auto	NEBNext Ultra II Directional NEBNext Ultra II Directional RNA + ribodepletion

@@ -1,0 +1,4 @@
+dataset	recipient	program	reference	treatment	method	n_reference	n_treatment	n_pairs	effect	standard_error	df	ci_low	ci_high	p_value	confidence_level	assumption	low_coverage	fdr_family	q_value
+GSE282665	astrocyte	ACHES	Resting-MCM	LPS-MCM	paired t	4	4	4	0.097019828405	0.0252307688704	3	0.016724261234	0.177315395576	0.0310384122019	0.95	Recipient lines matched by GEO metadata; assumes independent line differences.	False	primary	0.0310384122019
+GSE282665	astrocyte	SNAP-a	Resting-MCM	LPS-MCM	paired t	4	4	4	-0.02568253227	0.00551236158882	3	-0.0432253270417	-0.00813973749827	0.0186576069975	0.95	Recipient lines matched by GEO metadata; assumes independent line differences.	False	primary	0.0310384122019
+GSE282665	motor neuron	SNAP-n	Resting-MCM	LPS-MCM	paired t	3	3	3	-0.00251871138693	0.00507599754486	2	-0.0243589660792	0.0193215433054	0.668921203175	0.95	Recipient lines matched by GEO metadata; assumes independent line differences.	False	secondary	0.668921203175

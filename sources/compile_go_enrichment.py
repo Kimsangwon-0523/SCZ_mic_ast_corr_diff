@@ -2,6 +2,7 @@ import os
 import glob
 import re
 import csv
+from pathlib import Path
 
 def compile_enrichment(cohort_path, cell_type, prefix):
     directory = os.path.join(cohort_path, "WGCNA_GO_enrichr", f"GO_enrichr_{cell_type}")
@@ -57,9 +58,10 @@ def compile_enrichment(cohort_path, cell_type, prefix):
     print(f"Successfully compiled {len(all_rows)} rows into {output_file}.")
 
 def main():
+    data_dir = Path(__file__).resolve().parents[1] / "data"
     cohorts = [
-        "/data/home/swkim0523/research/SCZ_mic_ast_corr_diff/data/primary_cohort",
-        "/data/home/swkim0523/research/SCZ_mic_ast_corr_diff/data/validation_cohort/GSE254569"
+        data_dir / "primary_cohort",
+        data_dir / "validation_cohort" / "GSE254569",
     ]
     
     configs = [
@@ -68,7 +70,7 @@ def main():
     ]
     
     for cohort_path in cohorts:
-        cohort_name = os.path.basename(cohort_path) if "GSE" not in cohort_path else "validation_cohort (GSE254569)"
+        cohort_name = "validation_cohort (GSE254569)" if cohort_path.name == "GSE254569" else cohort_path.name
         print(f"\nProcessing {cohort_name}...")
         for cell_type, prefix in configs:
             compile_enrichment(cohort_path, cell_type, prefix)

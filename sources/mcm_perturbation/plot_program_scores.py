@@ -1,4 +1,4 @@
-"""Rebuild the human astrocyte figure and contrast table from saved scores."""
+"""Rebuild the astrocyte figures and contrast table from saved scores."""
 
 import argparse
 from pathlib import Path
@@ -19,8 +19,9 @@ def main():
     args = parser.parse_args()
     results = args.results
     scores = pd.read_csv(results / "program_scores.tsv", sep="\t")
-    save_program_score_figures(scores, results, args.figures)
-    print(f"Saved figure 24 to {args.figures} and program_score_effects_ci.tsv to {results}")
+    coverage = pd.read_csv(results / "program_coverage.tsv", sep="\t")
+    save_program_score_figures(scores, coverage, results, args.figures)
+    print(f"Saved figures 24–25 to {args.figures} and program_score_effects_ci.tsv to {results}")
 
 
 if __name__ == "__main__":

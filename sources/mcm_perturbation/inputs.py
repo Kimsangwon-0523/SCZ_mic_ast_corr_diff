@@ -3,7 +3,6 @@
 import re
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 
 
@@ -32,26 +31,10 @@ def read_geo_samples(path, dataset):
     return pd.DataFrame(rows)
 
 
-def read_mouse_counts(data_root):
-    path = data_root / "GSE175485/GSE175485_analysis.xlsx"
-    raw = pd.read_excel(path, sheet_name="1. RNA Seq Master List", header=None)
-    headers = raw.iloc[1].astype(str)
-    positions = headers.index[headers.str.fullmatch(r"(MCM|ECM)_(PBS|LPS)_.+")].tolist()
-    if len(positions) != 24:
-        raise ValueError("Expected 12 log2FPKM and 12 count columns")
-    log_positions, count_positions = positions[:12], positions[12:]
-    sample_ids = headers.iloc[log_positions].tolist()
-    count_ids = headers.iloc[count_positions].tolist()
-    expected = [name if name in sample_ids else name.rsplit("_", 1)[0] for name in count_ids]
-    if expected != sample_ids or not raw.iloc[0, count_positions].eq("Raw counts").any():
-        raise ValueError("Cannot resolve the raw-count block in GSE175485")
-    counts = raw.iloc[2:, count_positions].apply(pd.to_numeric, errors="raise")
-    counts.index = pd.Index(raw.iloc[2:, 0], name="gene_key")
-    counts.columns = sample_ids
-    values = counts.to_numpy()
-    if (values < 0).any() or not np.isfinite(values).all() or not np.equal(values, np.floor(values)).all():
-        raise ValueError("Invalid raw count values")
-    return counts.astype(int)
+def read_mouse_fpkm(data_root):
+    path = data_root / "GSE228927/GSE228927_FPKM_anno.xls"
+    raw = pd.read_csv(path, sep="\t", low_memory=False).set_index("id")
+    return raw.loc[:, raw.columns.str.fullmatch(r"(NOT|LPS|Hemin)\d+")]
 
 
 def read_human_tpm(data_root, recipient):
@@ -75,11 +58,14 @@ def sample_manifest(geo, dataset, recipient, columns):
     for sample in columns:
         pair_id = None
         recipient_line = None
-        if dataset == "GSE175485":
-            title = re.sub(r"(?:-NEW)?_S\d+$", "", sample)
-            medium, stimulus, _ = title.split("_")
-            condition = f"{stimulus}-{medium}"
-            planned = medium == "MCM"
+        if dataset == "GSE228927":
+            match = re.fullmatch(r"(NOT|LPS|Hemin)(\d+)", sample)
+            if match is None:
+                raise ValueError(f"Unexpected GSE228927 expression column: {sample}")
+            medium, replicate = match.groups()
+            condition = {"NOT": "Resting-MCM", "LPS": "LPS-MCM", "Hemin": "Hemin-MCM"}[medium]
+            title = f"{condition}, replicate {replicate}"
+            planned = True
         else:
             title = sample
         matches = geo.loc[geo["geo_title"].eq(title)]

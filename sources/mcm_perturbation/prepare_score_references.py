@@ -50,11 +50,11 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     sources = []
     records = []
-    for gse in ("GSE175485", "GSE282665"):
+    for gse in ("GSE228927", "GSE282665"):
         path = args.geo_dir / f"{gse}.samples.txt"
         sources.append((path, f"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={gse}&targ=gsm&form=text&view=full"))
         records.append(read_geo_samples(path, gse))
-    pd.concat(records, ignore_index=True).to_csv(output / "geo_samples.tsv", sep="\t", index=False)
+    pd.concat(records, ignore_index=True).to_csv(output / "geo_samples.tsv", sep="\t", index=False, na_rep="NA")
 
     pairs = pd.read_csv(args.ortholog_candidates)
     selected = pairs.loc[
